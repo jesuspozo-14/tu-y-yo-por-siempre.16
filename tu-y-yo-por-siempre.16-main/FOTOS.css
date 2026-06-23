@@ -200,10 +200,3 @@ p {
         top: 100vh;
     }
 }
-.mensaje-final{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
-    color: #6F4E37;
-    animation: aparecer 2s ease;
-}
