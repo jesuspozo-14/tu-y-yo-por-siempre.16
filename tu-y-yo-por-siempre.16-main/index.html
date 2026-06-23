@@ -3,23 +3,43 @@
     <head>
         <title>tu y yo por siempre</title>
         <link rel="stylesheet"
-        href="CSS.css..css"/>
+        href="FOTOS.css"/>
 
         <link rel="imagenes"
         href="imagenes.16/fotos.16/galeria.16.html">
 
     </head>
         <body id="fondo">
-
             
-        <img src="imagen de fondo.jpg">
-        
-
-            <a href="imagenes.16/fotos.16/galeria.16.html">
-            <button>ver Imagenes</button>
-        </a>
+            
             <header>
-          
+                <script>
+setInterval(() => {
+    let corazon = document.createElement("div");
+    corazon.innerHTML = "🤎";
+    corazon.classList.add("corazon");
+
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.fontSize = (20 + Math.random() * 20) + "px";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => {
+        corazon.remove();
+    }, 5000);
+}, 300); // cada 300 ms crea un corazón
+</script>
+ <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+        </div>
+       
                     
                 <h1 class="Y">TU ERES la respuesta de una oracion</h1>
                
@@ -31,7 +51,7 @@
                     <p>
 YOLICETH, MI ESPOSA
 
-A esta chica linda y hermosa la conocí en diciembre del año 2023, en la costa.
+a esta chica linda y hermosa la conocí en diciembre del año 2023, en la costa.
 
 Bueno, ya la había visto antes en el colegio, cuando yo cursaba décimo y ella once. Después se graduó y no la volví a ver, pero nunca le hablé; simplemente me gustaba.
 
@@ -140,8 +160,10 @@ yo le dije que como habia salido de trasnocho y dormí en la tarde ya no podia a
 hablamos sobre viajar a cartagena, ella me dijo que queria ir a conocer a cali. ahi las cosas fueron fluyendo</p>
                   
                 
-                    <button id="ver imagenes">ver imagenes</button>
+                    <a href="galeria.16.html">
 
+            <button>ver Imagenes</button>
+        </a>
                 
      </header>
      
