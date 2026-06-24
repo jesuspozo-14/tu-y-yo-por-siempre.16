@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>FOTOS DE MI ESPOSA Y YO🤎</title>
+
+    <link rel="stylesheet" href="FOTOS.css">
+    <link rel="mensaje final.html">
+  
+    </head>
+    <body id="fondo1"> 
+         <h2>tiempo que llevamos juntos🤎</h2>
+            <p id="contador"></p>
+        <header>
+         <h1>fotos de nosotros</h1>
+
+         <audio autoplay loop>
+        
+         </audio>
+         <script>
+setInterval(() => {
+    let corazon = document.createElement("div");
+    corazon.innerHTML = "🤎";
+    corazon.classList.add("corazon");
+
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.fontSize = (20 + Math.random() * 20) + "px";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => {
+        corazon.remove();
+    }, 5000);
+}, 300); // cada 300 ms crea un corazón
+</script>
+        <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+    <div class="corazon">🤎</div>
+        </div>
+
+<div class="libreta">
+
+    <div class="pagina">
+ <img src="foto16.png.jpeg" width="300px">
+<P>TU ERES</P></div>
+    <div class="pagina">
+ <img src="foto16.1.1png.jpeg" width="200px">
+<p>CONMIGO</p></div>
+    <div class="pagina">
+ <img src="foto16.1.2png.jpeg" width="200px">
+<P>PERFETA</P></div>
+    <div class="pagina">
+ <img src="foto16.1.3png.jpeg" width="200px">
+<P>ERES TODO</P></div>
+    <div class="pagina">    
+ <img src="foto16.1.4png.jpeg" width="200px">
+<P>ASI ERES TU</P></div>
+    <div class="pagina">
+ <img src="foto16.1.5png.jpeg" width="200px">
+<P>TE VOY AMAR</P></div>
+    <div class="pagina">
+ <img src="foto16.1.6png.jpeg" width="200px">
+<P>DESEANDOTE</P></div>
+    <div class="pagina">
+ <img src="foto16.1.7png.jpeg" width="200px">
+<P>ERES EL AMOR DE MI VIDA</P></div>
+
+
+</header>
+<a href="mensaje final.html">
+     <button class="boton">presioname 🤎</button>
+</a>
+  <script>
+const fechaInicio = new Date("2025-08-16");
+
+function actualizarContador() {
+    const ahora = new Date();
+    const diferencia = ahora - fechaInicio;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    document.getElementById("contador").innerHTML =
+        `${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos 🤎`;
+}   
+setInterval(actualizarContador, 1000);
+actualizarContador();
+</script>  
+
+    </body>
+</html>
+

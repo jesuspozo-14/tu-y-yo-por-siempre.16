@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>fotos de mi esposa y yo</title>
+    <title>FOTOS DE MI ESPOSA Y YO🤎</title>
 
     <link rel="stylesheet" href="FOTOS.css">
     <link rel="mensaje final.html">
   
     </head>
     <body id="fondo1"> 
+         <h2>tiempo que llevamos juntos🤎</h2>
+            <p id="contador"></p>
         <header>
          <h1>fotos de nosotros</h1>
 
@@ -68,7 +70,30 @@ setInterval(() => {
  <img src="foto16.1.7png.jpeg" width="200px">
 <P>ERES EL AMOR DE MI VIDA</P></div>
 
+
 </header>
+<a href="mensaje final.html">
+     <button class="boton">presioname 🤎</button>
+</a>
+  <script>
+const fechaInicio = new Date("2025-08-16");
+
+function actualizarContador() {
+    const ahora = new Date();
+    const diferencia = ahora - fechaInicio;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    document.getElementById("contador").innerHTML =
+        `${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos 🤎`;
+}   
+setInterval(actualizarContador, 1000);
+actualizarContador();
+</script>  
+
     </body>
 </html>
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TE AMO🤎</title>
+        <link rel="stylesheet" href="FOTOS.css">
+        <audio id="musica" loop>
+            <source src="vivo por ti.mpeg">
+        </audio>
+        </head>
+        
+        <body class="fondo3">
+             <h2>tiempo que llevamos juntos🤎</h2>
+            <p id="contador"></p>
+            
+<h1>nunca dudes de mi amor🤎</h1>
+
+ <P>GRACIAS POR LLEGAR A MI VIDA, 
+
+
+    GRACIAS POR SER LA MUJER QUE SIEMPRE LE PEDI A Dios
+
+
+    DIOS TE TRAJO PARA QUE ME CUIDARAS, ME AMARAS Y ME RESPETARAS.🤎</P>
+       
+    
+        <button onclick="document.getElementById('musica').play()">
+            reproducir🤎
+        </button>
+    
+    <div id="letra"></div>
+   
+   <script>
+   const audio=document.getElementById("musica");
+   const letra=document.getElementById("letra");
+
+   const frases=[
+    {tiempo: o, texto: "primera linea de la cancion"},
+    {tiempo: 5, texto: "segunda linea de la cancion"},
+    {tiempo: 10,texto: "tercera linea de la cancion"},
+    {tiempo: 15,texto: "cuarta linea de la cancion"},
+   ];
+
+   audio.addEventListener("timeupdate",() => {
+    const actual =audio.currentTime;
+
+    for (let i=frases.length-1; i>=0; i--){
+        if (actual >= frases[i].tiempo); {
+            letra.textContent=frases[i].texto;
+        break;
+    }
+   }
+});
+</script>
+
+<script>
+const fechaInicio = new Date("2025-08-16");
+
+function actualizarContador() {
+    const ahora = new Date();
+    const diferencia = ahora - fechaInicio;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    document.getElementById("contador").innerHTML =
+        `${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos 🤎`;
+}   
+setInterval(actualizarContador, 1000);
+actualizarContador();
+</script>    
+
+     </body>
+   
+</html
